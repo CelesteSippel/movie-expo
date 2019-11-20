@@ -20,19 +20,23 @@ const App = () => {
   return (
     <>
       <main>
-        <section className="made-in-the-80s"></section>
-        <ul>
-          {movieDetails.map(movie => {
-            return (
-              <Movie
-                key={movie.id}
-                title={movie.title}
-                poster_path={movie.poster_path}
-                overview={movie.overview}
-              />
-            )
-          })}
-        </ul>
+        <section className="header">
+          <h1>80's Movie Expo</h1>
+        </section>
+        <section>
+          <ul>
+            {movieDetails.map(movie => {
+              return (
+                <Movie
+                  key={movie.id}
+                  title={movie.title}
+                  poster_path={movie.poster_path}
+                  overview={movie.overview}
+                />
+              )
+            })}
+          </ul>
+        </section>
       </main>
     </>
   )
