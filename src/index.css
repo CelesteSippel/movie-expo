@@ -9,4 +9,20 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-image: url('./images/80s-pattern.png');
+}
+
+.made-in-the-80s {
+  background-image: url('./images/made-in-the-80s.jpeg');
+}
+.movie-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 27rem;
+  width: 18rem;
+  margin: 3rem 15rem;
+  padding: 0rem 1rem;
+  border: solid rgb(255, 105, 225) 10px;
 }
